@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute and their properties</title>
+  </head>
+  <body>
+    <input type="text" id="user" placeholder="username" />
+    <script>
+      let ans = document.getElementById("user");
+      //display all attributes
+      console.log(ans.attributes);
+
+      //get attribute -> display the type of attributes
+      console.log(ans.getAttribute("placeholder"));
+
+      //set attribute ->used to add more attributes
+      ans.setAttribute("class", "button");
+      console.log(ans.attributes);
+
+      //has ttribute->gives output in the form of true and false
+      console.log(ans.hasAttribute("placeholder")); //return true as present
+
+      //remove attribute
+      ans.removeAttribute('placeholder');
+      console.log(ans.attributes);
+    </script>
+  </body>
+</html>

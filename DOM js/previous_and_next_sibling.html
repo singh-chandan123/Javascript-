@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>previous and next sibling</title>
+</head>
+<body>
+    <div class="title">
+        <p>first para</p>
+        <p class="secondpara">second para</p>
+        <p>third para</p>
+        <p>fourth para</p>
+    </div>
+    <script>
+   let second=  document.querySelector('.secondpara');
+   //previous element
+   console.log(second.previousElementSibling);
+   //next element
+   console.log(second.nextElementSibling);
+    </script>
+</body>
+</html>

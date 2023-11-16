@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handler and event listener</title>
+</head>
+<body>
+    <div class="container">
+        <button id="button1" >button1</button>
+        <button id="button2">button2</button>
+    </div>
+    <script>
+         //event handler
+       let button=document.getElementById('button1');
+      
+       button.onclick= function clickfun(){
+        console.log("click here");
+       }
+      
+
+       //event listener
+       let button2=document.getElementById('button2');
+       button2.addEventListener('click',clickfun2);
+       function clickfun2(){
+        console.log("please click here");
+       }
+       //another way
+       button2.addEventListener('click',function(){
+        console.log("button 2 here");
+       })
+
+    </script>
+</body>
+</html>

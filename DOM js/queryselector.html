@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUERY SELECTOR</title>
+</head>
+<body>
+    <h1>this is heading</h1>
+    <div id="id1">
+        <h1>this is also heading downword</h1>
+        <h1>this is also heading downword</h1>
+        <h2>heading 2</h2>
+    </div>
+    <script>
+
+        let msg=document.querySelector('h1');//print only one h1  
+        let msgs=document.querySelectorAll(' h1');//print all h1
+        console.log(msg);
+        console.log(msgs);
+        let headh2=document.getElementById('id1');
+        let printhead=headh2.querySelector('h2');
+        console.log(printhead);
+
+
+    </script>
+</body>
+</html>

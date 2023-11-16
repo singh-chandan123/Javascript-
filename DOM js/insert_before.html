@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert before</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>home</li>
+        <li>blog</li>
+        <li>project</li>
+            </ul>
+            <script>
+                //get element first
+            let getelement= document.getElementById('menu') ;
+            //create list
+      let newelement=  document.createElement('li');
+      //add text to element
+      newelement.innerHTML="contact us";
+      //now insert it into first
+      getelement.insertBefore(newelement,getelement.children[2]);
+            </script>
+</body>
+</html>
+

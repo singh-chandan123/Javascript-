@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Element's Styles</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username" style="height: 70px; background-color: aquamarine;">
+    <script>
+//get element first
+let ans=document.getElementById('username');
+// style property
+ans.style.padding="50px"
+console.log(ans);
+
+//css text property ->basically it overwrite existing css property ,but we can concatenate for using existing css property 
+ans.style.cssText+="width:300px; font-size:30px";
+
+//getcomputedstyle ->used to tell us about all css properties applied on default as well as value of css properties
+console.log(window.getComputedStyle(ans).backgroundColor);
+    </script>
+</body>
+</html>

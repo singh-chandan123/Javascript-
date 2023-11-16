@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body>
+   <div>
+    <p id="message">dom manipulation</p>
+    <input type="radio" name="language" value="js">
+    <input type="radio" name="language" value="c++">
+<h1>first heading</h1>
+<h1>second heading</h1>
+<h1>third heading</h1>
+   </div>
+   <div id="div2">
+    <h2 class="firstheading">heading </h2>
+    <h2 class="firstheading">heading </h2>
+   </div>
+   <script>
+    // get element by id
+  let msg=  document.getElementById("message");//print the p element tag
+  console.log(msg);
+//get elemnt by name
+let lang=document.getElementsByName('language');
+console.log(lang);//return node list 
+//get elemnt by tag name
+let headtag=document.getElementsByTagName('h1');
+console.log(headtag);// return HTMLCollection(3) [h1, h1, h1]
+
+//get elemnt by classname
+let cont=document.getElementById('div2');
+let msghead=cont.getElementsByClassName('firstheading');
+console.log(msghead);
+
+   </script>
+</body>
+</html>

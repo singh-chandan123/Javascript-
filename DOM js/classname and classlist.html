@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classname and classlist properties</title>
+  </head>
+  <body>
+    <h1 id="title" class="message main">this is largest heading</h1>
+    <script>
+      // classname properties
+      let title = document.getElementById("title");
+      //print class name
+      console.log(title.className);
+      //add new class name by using classname
+      title.className += " new"; //it will overwrite so if we want existing class also we can use concatenation
+      console.log(title.className);
+
+      //classlist properties ->we can add ,remove,replace toggle by using classlist properties
+      console.log(title.classList);
+
+      //add new class name
+      title.classList.add("new2");
+      console.log(title);
+
+      //remove class
+      title.classList.remove("new");
+      console.log(title);
+
+      //replace class name
+      title.classList.replace("message", "msg");
+      console.log(title);
+
+      //conatin method gives whether class is present or not
+      console.log(title.classList.contains("message"));
+
+      //toggle ->if element is present then made it absent and viceversa
+      title.classList.toggle("msg");
+      console.log(title);
+    </script>
+  </body>
+</html>

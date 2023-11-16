@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use of append child method</title>
+</head>
+<body>
+    <ul id="menu">
+<li>home</li>
+<li>blog</li>
+<li>project</li>
+<li>functions</li>
+    </ul>
+    <script>
+        //add an element to last in list
+  let menu=  document.getElementById("menu");
+ let newelement =document.createElement("li");
+ newelement.innerHTML="contact";
+ //add at last so use appendchild
+ menu.appendChild(newelement);
+
+    </script>
+</body>
+</html>
